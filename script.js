@@ -11,6 +11,7 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoine = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 100;
+ctx.globalCompositeOperation = "multiply";
 
 let isDrawing = false;
 let lastX = 0;
