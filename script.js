@@ -10,3 +10,14 @@ canvas.height = window.innerHeight;
 ctx.strokeStyle = "#BADA55";
 ctx.lineJoine = "round";
 ctx.lineCap = "round";
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+function draw(e) {
+  if (!isDrawing) return;
+  console.log(e); // stop the function from running when they are not moused down
+}
+
+canvas.addEventListener("mousemove", draw);
