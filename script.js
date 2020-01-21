@@ -20,6 +20,7 @@ let hue = 0;
 function draw(e) {
   if (!isDrawing) return;
   console.log(e); // stop the function from running when they are not moused down
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)"`;
   ctx.beginPath();
   // start from
   ctx.moveTo(lastX, lastY);
